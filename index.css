@@ -1,0 +1,369 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background:rgb(228, 228, 228);
+    height: 110px;
+    width: 100%;
+}
+.logo{
+    color: black;
+    font-size: 35px;
+    line-height: 50px;
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: cursive;
+}
+ul{
+    align-items: center;
+    margin-right: 20px;
+
+}
+ul,li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+ul,li,a{
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 8px 10px;
+    justify-content: center;
+    align-items: center;
+    font-family:inherit;
+}
+
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    .logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav,ul,li,a{
+        font-size: 16px;   
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        height: 100%;
+        width: 100vh;
+        background: #2c3e50;
+        top: 40px;
+        left: 0;
+        text-align: center;
+    }
+    ul,li,nav{
+        display: block;
+    }
+}
+.container{
+    display: sticky;
+    width: 100%;
+    height: 100vh;
+  
+}
+form{
+    background: #fff;
+    width: 300px;
+    height: 35px;
+    display: flex;
+}
+form input{
+    flex: 1;
+    border: none;
+    outline: none;
+
+}
+form button{
+    background: tomato;
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+form .bi-search{
+    align-self: center;
+    padding: 10px 20px;
+    color: #777;
+
+}
+.img1{
+    width: 180px;height: 150px;
+    display: block;
+    margin: auto;
+    transition: transform 1s;
+}
+.img1:hover{
+    transform:scale(2,2);
+}
+
+.card{
+    border: 5px groove grey;
+    width: 250px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.card2 img{
+    width: 200px; height: 180px;
+}
+fieldset button{
+    width: 200px;
+    background-color: rgb(230, 151, 206);
+    border: 0px;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.container1{
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+fieldset{
+    width: 220px;
+    height: 250px;
+    border: 1px solid rgb(198, 181, 181);
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+}
+.card1, fieldset, button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card2{
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+ 
+
+.list1{
+    color:grey;
+}
+.sign-in{
+    background-color: cadetblue;
+    height:150px;
+    margin-bottom: 40px;;
+}
+.textin{
+    padding-top:40px;
+    padding-left:55px;
+    padding-bottom:20px;
+}
+.sign-in > .textin,.email{
+    flex-basis: 50%;
+}
+.signinbox{
+    padding-top:40px;
+    padding-left:55px;
+    padding-bottom:20px;
+    width: 50%;
+}
+.signinbox form{
+    width: 500px;
+    height: 55px;
+}
+.signinbox input{
+    border: none;
+    outline: none;
+    padding: 10px 52px;
+}
+.signinbox button{
+    background: rgb(176, 22, 176);
+    padding: 10px 52px;
+    border: none;
+    outline: none;
+    color: white;
+}
+.side-margin{
+    margin-left: 50px;
+    margin-right:50px;
+}
+.payments{
+    width:40px; height:30px;
+    margin-right: 6px;
+}
+.icon{
+    font-size: 28px;
+}
+i{
+    margin-right: 5px;
+    color:grey;
+}
+.block3 a{
+    text-decoration: none;
+    color:grey;
+}
+.bth{
+    background-color: cadetblue;
+    height: 80px;
+   
+}
+
+.tth{
+    margin-top:30px;
+    padding-right: 10px;
+    padding-top: 20px;
+    color:black;
+    text-align: right;
+    font-size: 20px;
+}
+.tth a{
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.tth a:hover{
+    color:purple;
+}
+*{
+    font-family:cursive;
+    box-sizing: border-box;
+}
+.head{
+    background-color:rgb(53, 217, 253);
+    padding:25px;
+    margin:7px;
+    margin-bottom:20px;
+}
+.aside{
+    background-color:rgb(89, 237, 237);
+    padding:6px;
+    text-align:center;
+}
+.menu li:hover{
+    background-color:rgb(243, 168, 168);
+}
+.menu{
+    color:white;
+}
+.menu li{
+    background-color:rgb(146, 146, 255);
+    margin-bottom:10px;
+}
+.menu ul{
+    list-style-type:none;
+}
+.mid{
+    text-align: left;
+    overflow-x:auto;
+    overflow-y:scroll;
+    height:300px;
+}
+.row::after{
+    content:"";
+}
+li{
+    padding:10px;
+}
+.row{
+    margin-left:5px;
+    margin-right:30px;
+}
+footer{
+    background-color:rgb(91, 230, 255);
+    color:white;
+    padding:10px;
+    text-align:center;
+}
+.row{
+    margin-bottom:30px;
+}
+#text{
+    margin-top: 28px;
+}
+.fff{
+    text-align: center;
+    padding-top: 20px;
+}
+.card3 img{
+    width: 250px; height: 290px;
+}
+.container2{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.container2 fieldset{
+    width: 150px;
+    height: 400px;
+    border: 1px solid rgb(198, 181, 181);
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card5, fieldset, button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card3{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.card3 p,h4{
+    padding: 5px;
+}
+.ddd{
+    text-align: center;
+    padding-top: 60px;
+}
+.card11 img{
+    width: 250px; height: 290px;
+}
+.container3{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
+.container3 fieldset{
+    width: 150px;
+    height: 400px;
+    border: 1px solid rgb(198, 181, 181);
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card5, fieldset{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card11{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.card11 p,h4{
+    padding: 5px;
+}
